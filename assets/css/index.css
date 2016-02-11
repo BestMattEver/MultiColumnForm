@@ -1,0 +1,65 @@
+
+body{
+  background: #47a3da;
+  margin-left: 2%;
+}
+@media(max-width: 320px)
+{
+  .col1{ /* This is the column style for CELL view*/
+    width: 96%;
+    margin: 2% 2%;
+    display: inline-block;
+  }
+}/*end media query*/
+@media(max-width: 1024px)
+{
+  .col1{ /* This is the column style for Tablet view.*/
+    width: 48%;
+    margin: 2% 2%;
+    display: inline-block;
+  }
+  .col2{ /* This is the column style for Tablet view.*/
+    width: 96%;
+    margin: 2% 2%;
+    display: inline-block;
+  }
+/ /*end media query*/
+
+.col1 .col2{ /* This is the column style for FULL SCREEN view. IE: Standard*/
+  width: 28%;
+  margin: 2% 2%;
+  display: inline-block;
+}
+
+
+.wrapper{ /* each indivigual box and label combo is inside a wrapper element*/
+  margin-top: 20px;
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+input{
+  color: #41657a;
+  font-size: 1.1em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-style: italic;
+
+  margin-top: 5px;
+  padding-top:10px;
+  padding-bottom:10px;  /* <--- This is how you make BIG text boxes*/
+  position: relative;
+  width:100%;
+
+  background: #47a3da;
+  border: 3px #fff solid;
+  outline-width: 0px; /* <--- This is how you prevent text boxes from highlighting when selected*/
+
+}
+input:focus{
+  border: 3px #41657a solid; /*This is how you make text boxes change color when you select it*/
+}
