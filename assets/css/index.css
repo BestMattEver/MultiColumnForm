@@ -3,34 +3,56 @@ body{
   background: #47a3da;
   margin-left: 2%;
 }
-@media(max-width: 320px)
+
+/*--------------------------Start Media Queries -----------------------------*/
+@media(max-width: 600px)
 {
-  .col1{ /* This is the column style for CELL view*/
-    width: 96%;
+  .col1{ /* This is the column style for TABLET view.*/
+    width: 94%;
     margin: 2% 2%;
     display: inline-block;
+    /*background: white;  <-- I used these to identify which parts of my code
+    were being used when the screen changed */
+  }
+  .col2{ /* This is the column style for TABLET view.*/
+    width: 94%;
+    margin: 2% 2%;
+    display: inline-block;
+    /*background: white;*/
   }
 }/*end media query*/
-@media(max-width: 1024px)
+@media(min-width: 600px)
 {
-  .col1{ /* This is the column style for Tablet view.*/
-    width: 48%;
+  .col1{ /* This is the column style for TABLET view.*/
+    width: 45%;
     margin: 2% 2%;
     display: inline-block;
+    /*background: green;  <-- I used these to identify which parts of my code
+    were being used when the screen changed */
   }
-  .col2{ /* This is the column style for Tablet view.*/
-    width: 96%;
+  .col2{ /* This is the column style for TABLET view.*/
+    width: 94%;
     margin: 2% 2%;
     display: inline-block;
+    /*background: green;*/
   }
-/ /*end media query*/
-
-.col1 .col2{ /* This is the column style for FULL SCREEN view. IE: Standard*/
-  width: 28%;
-  margin: 2% 2%;
-  display: inline-block;
+}/*end media query*/
+@media(min-width: 1024px)
+{
+  .col1{ /* This is the column style for FULL SCREEN view.*/
+    width: 29%;
+    margin: 2% 2%;
+    display: inline-block;
+    /*background: red;*/
+  }
+  .col2{ /* This is the column style for FULL SCREEN view.*/
+    width: 29%;
+    margin: 2% 2%;
+    display: inline-block;
+    /*background: red;*/
+  }
 }
-
+/*------------------------End Media Queries here-----------------------------*/
 
 .wrapper{ /* each indivigual box and label combo is inside a wrapper element*/
   margin-top: 20px;
@@ -42,7 +64,7 @@ body{
 }
 
 input{
-  color: #41657a;
+  color: #fff;
   font-size: 1.1em;
   font-weight: 500;
   letter-spacing: 1px;
