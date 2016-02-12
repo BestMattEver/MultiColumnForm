@@ -1,6 +1,51 @@
-var scriptOut1 =document.querySelector("#scriptOut1");
-var scriptOut2 =document.querySelector("#scriptOut2");
+//var scriptOut1 =document.querySelector("#scriptOut1");
+//var scriptOut2 =document.querySelector("#scriptOut2");
 //scriptOut1.textContent =" it is Garbage sized.";
+
+var send = document.querySelector("#send")
+
+//these grab all the texbox elements
+var first_Name = document.querySelector("#first_Name");
+var last_Name = document.querySelector("#last_Name");
+var email = document.querySelector("#email");
+var bio = document.querySelector("#bio");
+var phone = document.querySelector("#phone");
+var affiliations = document.querySelector("#affiliations");
+var kitty = document.querySelector("#kitty");
+var gadget = document.querySelector("#gadget");
+var drink = document.querySelector("#drink");
+var weapon = document.querySelector("#weapon")
+var power = document.querySelector("#power");
+var comments = document.querySelector("#comments");
+
+//drop down values grabbed:
+var country = document.querySelector("#country");
+var occupation = document.querySelector("#occupation");
+var talent = document.querySelector("#talent");
+
+
+
+
+send.addEventListener('click', function(){
+  //console.log("someone touched me.");
+  console.log("First Name: " + first_Name.value);
+  console.log("Last Name: " + last_Name.value);
+  console.log("E-mail: " + email.value);
+  console.log("bio: " + bio.value);
+  console.log("Phone Number: " + phone.value);
+  console.log("Affiliations: " + affiliations.value);
+  console.log("Kitty's Name: " + kitty.value);
+  console.log("Favorite Gadget: " + gadget.value);
+  console.log("Favorite Drink: " + drink.value);
+  console.log("Weapon of Choice: " + weapon.value);
+  console.log("Special Power: " + power.value);
+  console.log("Comments: " + comments.value);
+
+  console.log("Type of Talent: " + talent.value);
+  console.log("Occupation: " + occupation.value);
+  console.log("Country: " + country.value); 
+});
+
 
 
 //----------------BELOW SEEMS TO BE ABLE TO PRINT TO THE SCREEN BASED ON WINDOW SIZE-----------------------

@@ -109,6 +109,7 @@ input{
   border: 3px #fff solid;
   outline-width: 0px; /* <--- This is how you prevent text boxes from highlighting when selected*/
 }
+input:placeholder-shown { color: #10689a; }
 
 textarea{
   color: #fff;
