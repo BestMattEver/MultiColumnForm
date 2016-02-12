@@ -9,42 +9,105 @@
   <link rel="stylesheet" href ="assets/css/index.css">
 </head>
 <body>
+
   <span class = "col1"> <!--start first column-->
     <div class = "wrapper">
       FIRST NAME<br>
-      <em><input ="text"></input></em>
+      <input ="text" id="first_Name" placeholder="Jarod"></input>
     </div>
 
     <div class ="wrapper">
       LAST NAME<br>
-      <em><input = "text"></input></em>
+      <input = "text" id="last_Name" placeholder="Beanbag"></input>
+    </div>
+
+    <div class ="wrapper">
+      EMAIL ADDRESS<br>
+      <input = "text" id="email" placeholder="BeanBro@FeeltheBurn.com"></input>
+    </div>
+    <div class="wrapper">
+      COUNTRY<br>
+      <select id="country">
+        <option>Choose A Country</option>
+        <option>France</option>
+        <option>Italy</option>
+        <option>Portugal</option>
+      </select>
+    </div>
+    <div class ="wrapper">
+      BIOGRAPHY<br>
+      <textarea id="bio" rows="5" cols="59" wrap="true"></textarea>
     </div>
   </span><!--End first column-->
-<span id="scriptOut1"></span>
+
+<span id="scriptOut1"></span><!------------------------------------------------------------>
+
   <span class = "col1"> <!--start SECOND column-->
     <div class = "wrapper">
-      FIRST NAME<br>
-      <em><input ="text"></input></em>
+      PHONE NUMBER<br>
+      <em><input ="text" id="phone"></input></em>
     </div>
-
     <div class ="wrapper">
-      LAST NAME<br>
-      <em><input = "text"></input></em>
+      AFFILIATIONS<br>
+      <textarea id="affiliations" rows="5" cols="59" wrap="true"></textarea>
+    </div>
+    <div class="wrapper">
+      COUNTRY<br>
+      <select id="occupation">
+        <option>Choose an Occupation</option>
+        <option>Web Designer</option>
+        <option>Web Developer</option>
+        <option>Hybred</option>
+        <option>Scoundrel</option>
+      </select>
+    </div>
+    <div class ="wrapper">
+      KITTY NAME<br>
+      <input = "text" id="kitty"></input>
+    </div>
+    <div class ="wrapper">
+      FAVORITE GADGET<br>
+      <input = "text" id="gadget"></input>
     </div>
   </span><!--End SECOND column-->
-<span id="scriptOut2"></span>
-  <span class = "col1 col2"> <!--start THIRD column-->
-    <div class = "wrapper">
-      FIRST NAME<br>
-      <em><input ="text"></input></em>
-    </div>
 
+<span id="scriptOut2"></span><!------------------------------------------------------------>
+
+  <span class = "col1 col2"> <!--start THIRD column-->
+    <div class="wrapper">
+      TYPE OF TALENT<br>
+      <select id="talent">
+        <option>Choose an Ability</option>
+        <option>Ninja Silence</option>
+        <option>Sumo Power</option>
+        <option>Samurai Precision</option>
+        <option>Mad Scheming</option>
+      </select>
+    </div>
     <div class ="wrapper">
-      LAST NAME<br>
-      <em><input = "text"></input></em>
+      FAVORITE DRINK<br>
+      <input ="text" id="drink" placeholder="Green Tea"></input>
+    </div>
+    <div class ="wrapper">
+      SPECIAL POWER<br>
+      <input ="text" id="power" placeholder="Anti-Gravity"></input>
+    </div>
+    <div class ="wrapper">
+      WEAPON OF CHOICE<br>
+      <input ="text" id="weapon" placeholder="Lightsaber"></input>
+    </div>
+    <div class ="wrapper">
+      COMMENTS<br>
+      <textarea id="comments" rows="5" cols="59" wrap="true"></textarea>
     </div>
   </span><!--End THIRD column-->
 <br>
+<!--- submit button ------------------------------>
+
+  <input type="submit" value="SEND YOUR DATA" id="send">
+  <br>
+  <br>
+  <br>
 
 <script src="assets/js/index.js"></script>
 </body>

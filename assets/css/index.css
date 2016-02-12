@@ -2,22 +2,25 @@
 body{
   background: #47a3da;
   margin-left: 2%;
+  margin-top: 3%;
 }
 
 /*--------------------------Start Media Queries -----------------------------*/
 @media(max-width: 600px)
 {
-  .col1{ /* This is the column style for TABLET view.*/
+  .col1{ /* This is the column style for MOBILE view.*/
     width: 94%;
     margin: 2% 2%;
     display: inline-block;
+    vertical-align:top;
     /*background: white;  <-- I used these to identify which parts of my code
     were being used when the screen changed */
   }
-  .col2{ /* This is the column style for TABLET view.*/
+  .col2{ /* This is the column style for MOBILE view.*/
     width: 94%;
     margin: 2% 2%;
     display: inline-block;
+    vertical-align:top;
     /*background: white;*/
   }
 }/*end media query*/
@@ -27,6 +30,7 @@ body{
     width: 45%;
     margin: 2% 2%;
     display: inline-block;
+    vertical-align:top;
     /*background: green;  <-- I used these to identify which parts of my code
     were being used when the screen changed */
   }
@@ -34,6 +38,7 @@ body{
     width: 94%;
     margin: 2% 2%;
     display: inline-block;
+    vertical-align:top;
     /*background: green;*/
   }
 }/*end media query*/
@@ -43,19 +48,21 @@ body{
     width: 29%;
     margin: 2% 2%;
     display: inline-block;
+    vertical-align:top;
     /*background: red;*/
   }
   .col2{ /* This is the column style for FULL SCREEN view.*/
     width: 29%;
     margin: 2% 2%;
     display: inline-block;
+    vertical-align:top;
     /*background: red;*/
   }
 }
 /*------------------------End Media Queries here-----------------------------*/
 
 .wrapper{ /* each indivigual box and label combo is inside a wrapper element*/
-  margin-top: 20px;
+  margin-top: 40px;
   font-family: sans-serif;
   color: #fff;
   font-size: 1.1em;
@@ -63,6 +70,27 @@ body{
   letter-spacing: 1px;
 }
 
+/*this is the styling for the drop down menu*/
+select{
+  color:#fff;
+  font-size: 1.1em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-style: italic;
+
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  width: 100%;
+
+  background: #47a3da;
+  border: 1px #bbb solid;
+  outline-width: 0px;
+}
+
+/*this is the styling for the normal text box*/
 input{
   color: #fff;
   font-size: 1.1em;
@@ -80,8 +108,43 @@ input{
   background: #47a3da;
   border: 3px #fff solid;
   outline-width: 0px; /* <--- This is how you prevent text boxes from highlighting when selected*/
-
 }
+
+textarea{
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-style: italic;
+
+  margin-top: 5px;
+  padding-top:10px;
+  padding-bottom:10px;  /* <--- This is how you make BIG text boxes*/
+  position: relative;
+  width:100%;
+
+  background: #47a3da;
+  border: 3px #fff solid;
+  outline-width: 0px; /* <--- This is how you prevent text boxes from highlighting when selected*/
+}
+
 input:focus{
   border: 3px #41657a solid; /*This is how you make text boxes change color when you select it*/
+}
+
+#send{
+  margin-left: 35%;
+  width:29%;
+  color: #fff;
+  border: 1px #10689a solid;
+  background: #10689a;
+}
+
+#send:hover{
+  margin-left: 35%;
+  width:29%;
+  color: #fff;
+  border: 1px #4092c1 solid;
+  background: #4092c1;
 }
